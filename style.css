@@ -1,3 +1,10 @@
 body {
-    width: 8000px;
+    width: 14000px;
+}
+
+.slide {
+    width: 930px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 1040px;
 }
