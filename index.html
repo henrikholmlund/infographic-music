@@ -26,9 +26,10 @@
         <p>Sounds confusing? Hopefully we will be able to sort things out  and make you understand just a little bit more exactly what rhythm is by the end of this tutorial. </p>
 
     </div>
-    <div id="helnot" class="slide">
-        <audio controls>
-            <source src="audio/wholenote_click.mp3" type="audio/mpeg">
+    <div id="wholenote" class="slide">
+        <img id="wholenoteImg" src="img/wholenote.png">
+        <audio id="playerWhole" loop>
+            <source src="audio/wholenote_click_test.mp3" type="audio/mpeg">
         </audio>
         <h2>Whole notes</h2>
         <p>Whole notes are the simplest and easiest note value to understand, its value is equal to four beats in 4/4 time. One can simply say that it takes up the entire measure, and it lasts for four beats</p>
@@ -37,7 +38,11 @@
         <p>A whole note sounds like this, with a count in of four beats (quarter notes).</p>
     </div>
 
-    <div id="halvnot" class="slide">
+    <div id="halfnote" class="slide">
+        <img id="halfnoteImg" src="img/halfnote.png">
+        <audio id="playerHalf" loop>
+            <source src="audio/halftnote_click_test.mp3" type="audio/mpeg">
+        </audio>
         <h2>Half notes</h2>
         <p>Half notes, as you might have guessed, take up half as much space as the whole note.
             So if you’re counting and walking again, the first half note of the measure will start when you count “one” and the second when you count “three.</p>
@@ -46,6 +51,10 @@
     </div>
 
     <div id="4-dels" class="slide">
+        <img id="quarternoteImg" src="img/quarternote.png">
+        <audio id="playerQuarter" loop>
+            <source src="audio/quarternote_click_test.mp3" type="audio/mpeg">
+        </audio>
         <h2>Quarter notes</h2>
         <p>Quarter notes are simply put what you’ve just been counting and walking so far. In western music the most common time signature by far is 4/4 time, and quarter notes are the simplest way to define 4/4 time.</p>
         <p>It’s in the bass drum of a EDM tune, in the bass drum in a break down of a song when some artist wants the audience to clap along to name but a few of instances where quarter notes occur. </p>
@@ -53,6 +62,10 @@
     </div>
 
     <div id="8-dels" class="slide">
+        <img id="eightnoteImg" src="img/eigthnote.png">
+        <audio id="playerEight" loop>
+            <source src="audio/eighthnote_click_test.mp3" type="audio/mpeg">
+        </audio>
         <h2>Eighth notes</h2>
         <p>Eighth notes are twice as fast as quarter notes. So whatever tempo you were imagining before, eighth notes are twice that. If you want to count along you can just add a “and” after each number. So 1-2-3-4 for quarter notes in 4/4 time becomes 1-and-2-and-3-and-4-and for eighth notes in 4/4 time.</p>
         <p>Try switching between one measure of quarter notes, and one measure of eighth notes to get a feel for the eighth note rhythm.</p>
@@ -60,10 +73,18 @@
     </div>
 
     <div id="16-dels" class="slide">
+        <img id="sixthnoteImg" src="img/sixteenthnote.png">
+        <audio id="playerSixth" loop>
+            <source src="audio/sixteenthnote_click_test.mp3" type="audio/mpeg">
+        </audio>
         <h2>Sixteenth notes</h2>
         <p>Last and actually least in this tutorial are the sixteenth notes, which depending on tempo can go by pretty quickly! Sixteenth notes are yet again twice as fast as eighth notes, and if you want to count again it’s a bit different than counting eighth notes being that it’s twice as fast.</p>
         <p>So instead of 1-and-2-and-3-and-4-and, we now get 1-eh-and-ah-2-eh-and-ah-3-eh-and-ah-4-eh-and-ah.</p>
         <p>Sixteen sixteenth notes on the piano with a count in of four quarter notes sound like this:</p>
     </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="code.js"></script>
+
 </body>
 </html>
