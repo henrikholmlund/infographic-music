@@ -55,6 +55,18 @@ sixthnoteImg.addEventListener("click", function(){
     }
 });
 
+//räknar vilken positon man är i
+$(window).on("scroll", function() {
+    console.log($(window).scrollLeft());
+});
+
+//gömmer först info, sen fadein vid 500
+$("#info").hide();
+$(window).scroll(function(){
+    if($(this).scrollLeft() > 500){
+        $("#info").fadeIn(5000);
+    }
+});
 
 //** play and pause **//
 /*

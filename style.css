@@ -2,13 +2,18 @@ body {
     width: 14000px;
 }
 
+#title {
+    text-align: center;
+}
+
 .slide {
     width: 930px;
     float: left;
     padding-left: 30px;
-    padding-right: 1040px;
+    margin-right: 1030px;
+    border: 1px solid black;
 }
 
-#testbild {
-
+.noteImg {
+    margin-top: 100px;
 }
