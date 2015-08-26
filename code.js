@@ -3,12 +3,22 @@ var halfnoteImg = document.getElementById("halfnoteImg");
 var quarternoteImg = document.getElementById("quarternoteImg");
 var eightnoteImg = document.getElementById("eightnoteImg");
 var sixthnoteImg = document.getElementById("sixthnoteImg");
+var footstepsImg = document.getElementById("footstepsImg");
 
 var playerWhole = document.getElementById("playerWhole");
 var playerHalf = document.getElementById("playerHalf");
 var playerQuarter = document.getElementById("playerQuarter");
 var playerEight = document.getElementById("playerEight");
 var playerSixth = document.getElementById("playerSixth");
+var playerFootsteps = document.getElementById("playerFootsteps");
+
+footstepsImg.addEventListener("click", function () {
+    if(playerFootsteps.paused === false){
+        playerFootsteps.pause();
+    } else {
+        playerFootsteps.play();
+    }
+});
 
 wholenoteImg.addEventListener("click", function(){
     if(playerWhole.paused === false){

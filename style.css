@@ -6,9 +6,7 @@ body {
     min-height: 100%;
     width: 18000px;
 }
-#wrapper {
-    height: 100%;
-}
+
 #title {
     text-align: center;
 }
@@ -38,10 +36,19 @@ body {
     width: 600px;
     height: 200px;
 }
+
 #time-signature {
     display: none;
     float: right;
 }
+
+#footsteps {
+
+    float: left;
+    height: 200px;
+
+}
+
 .slide {
     width: 930px;
     float: left;
