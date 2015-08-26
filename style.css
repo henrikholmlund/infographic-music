@@ -6,7 +6,16 @@ body {
     min-height: 100%;
     width: 18000px;
 }
+#box {
+    z-index: 9999;
+    position: relative;
+    height: 125px;
+    width: 2px;
+    background: red;
+    left: 100px;
+    top: 120px;
 
+}
 #title {
     text-align: center;
 }
@@ -58,5 +67,6 @@ body {
 }
 
 .noteImg {
-    margin-top: 100px;
+    z-index: 1;
+    position: relative;
 }

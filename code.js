@@ -23,10 +23,18 @@ footstepsImg.addEventListener("click", function () {
 wholenoteImg.addEventListener("click", function(){
     if(playerWhole.paused === false){
         playerWhole.pause();
+        $("#box").animate({left: "100"}, 1);
     }
     else {
-        playerWhole.play()
+        playerWhole.play();
+
+        $("#box")
+            .delay(2400).animate({left: "1000px"}, 2400, "linear")
+            .animate({left: "100"}, 1)
+
+
     }
+
 });
 
 halfnoteImg.addEventListener("click", function(){
@@ -70,9 +78,8 @@ $(window).on("scroll", function() {
     console.log($(window).scrollLeft());
 });
 
-//gömmer först info, sen fadein vid 500
 
-
+//alla jävla animationer, triggade av scrollLeft-värde
 
 $(window).scroll(function(){
     var scrollLeft = $(this).scrollLeft();
@@ -107,9 +114,10 @@ $(window).scroll(function(){
 
 
 
+$("#box").on("click", function(){
+    $("#box").animate({left: "1000px"}, 2400);
 
-
-
+});
 
 
 
