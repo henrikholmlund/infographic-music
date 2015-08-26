@@ -68,17 +68,30 @@ $(window).scroll(function(){
     var scrollLeft = $(this).scrollLeft();
 
     if(scrollLeft > 1000){
-
         $("#rhythmh2").fadeIn(1000);
+    }
+    else if(scrollLeft > 1900 || scrollLeft < 1450) {
+        $("#rhythmh2").fadeOut(400);
     }
     if(scrollLeft > 1400){
         $("#rhythmbox1").fadeIn(1000);
     }
+    else if(scrollLeft > 1900 || scrollLeft < 1500){
+        $("#rhythmbox1").fadeOut(400);
+    }
     if(scrollLeft > 1600){
         $("#rhythmbox2").fadeIn(1000);
     }
+    else if(scrollLeft > 2300 || scrollLeft < 1550){
+        $("#rhythmbox2").fadeOut(400);
+    }
     if(scrollLeft > 1800){
         $("#rhythmbox3").fadeIn(1000);
+        $("#time-signature").fadeIn(2000);
+    }
+    else if(scrollLeft > 1900 || scrollLeft < 1650){
+        $("#rhythmbox3").fadeOut(400);
+        $("#time-signature").fadeOut(400);
     }
 });
 
