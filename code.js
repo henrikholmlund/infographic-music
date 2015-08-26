@@ -61,11 +61,51 @@ $(window).on("scroll", function() {
 });
 
 //gömmer först info, sen fadein vid 500
-$("#info").hide();
+
+
+
 $(window).scroll(function(){
-    if($(this).scrollLeft() > 500){
-        $("#info").fadeIn(5000);
+    var scrollLeft = $(this).scrollLeft();
+
+    if(scrollLeft > 1000){
+
+        $("#rhythmh2").fadeIn(1000);
     }
+    if(scrollLeft > 1400){
+        $("#rhythmbox1").fadeIn(1000);
+    }
+    if(scrollLeft > 1600){
+        $("#rhythmbox2").fadeIn(1000);
+    }
+    if(scrollLeft > 1800){
+        $("#rhythmbox3").fadeIn(1000);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//force horizontal scrolling
+$(function() {
+
+    $("body").mousewheel(function(event, delta) {
+
+        this.scrollLeft -= (delta * 5);
+
+        event.preventDefault();
+
+    });
+
 });
 
 //** play and pause **//

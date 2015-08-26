@@ -1,17 +1,45 @@
 body {
     width: 14000px;
+    height: 700px;
 }
 
 #title {
     text-align: center;
 }
 
+#rhythmh2 {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+#rhythmbox1 {
+    display: none;
+
+    width: 500px;
+    height: 200px;
+}
+#rhythmbox2 {
+    display: none;
+    position: relative;
+
+    left: 100px;
+    width: 400px;
+    height: 200px;
+}
+#rhythmbox3 {
+    display: none;
+    position: relative;
+
+    left: 300px;
+    width: 600px;
+    height: 200px;
+}
 .slide {
     width: 930px;
     float: left;
     padding-left: 30px;
     margin-right: 1030px;
-    border: 1px solid black;
+
 }
 
 .noteImg {
