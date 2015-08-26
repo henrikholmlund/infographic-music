@@ -6,6 +6,15 @@ body {
     min-height: 100%;
     width: 18000px;
 }
+
+h1, h2, h3 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #box {
     z-index: 9999;
     position: relative;
@@ -14,8 +23,8 @@ body {
     background: red;
     left: 100px;
     top: 120px;
-
 }
+
 #title {
     text-align: center;
 }
