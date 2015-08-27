@@ -9,6 +9,7 @@ html {
 body {
     min-height: 100%;
     width: 18000px;
+    background-color: #c6c6c6;
 }
 
 h1, h2, h3 {
@@ -16,7 +17,6 @@ h1, h2, h3 {
 }
 
 h1 {
-    margin: 25% auto;
     font-size: 3.5em;
     color: #404040;
 }
@@ -64,37 +64,49 @@ svg {
 }
 
 #title {
+
+}
+#titlediv {
     text-align: center;
 }
-
 #rhythmh2 {
+    font-size: 1.5em;
     display: none;
     text-align: center;
-    margin: 0 auto;
+    margin: 5px auto;
+}
+#rhythmH2Border {
+    border: 3px solid gray;
+    width: 25%;
+    margin: 0 auto 100px auto;
 }
 #rhythmbox1 {
-    display: none;
-
+    font-size: 1.5em;
+    line-height: 140%;
 }
 #rhythmbox2 {
+    font-size: 16px;
     display: none;
-    position: relative;
-
 }
 #rhythmbox3 {
+    font-size: 16px;
+    margin-top: 50px;
     display: none;
     position: relative;
 
 }
 
 #time-signature {
+    height: 200px;
+    margin: 0 auto;
     display: none;
-    float: right;
+    padding-left: 60px;
 }
 
 #footsteps {
-    float: left;
+    margin-top: 50px;
     height: 200px;
+
 }
 
 #svgimg {
@@ -110,24 +122,24 @@ svg {
 }
 
 .slide {
-    width: 930px;
+    width: 1130px;
     float: left;
     padding-left: 30px;
-    margin-right: 1030px;
+    margin-right: 830px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: white;
+    border: 1px black solid;
 }
 
-.container {
-
+.bookmark {
+    width: 100px;
+    background-color: red;
+    float: left;
+    margin-top: auto;
 }
-.container p {
-    font-size: 1em;
-}
-
 .noteImg {
     z-index: 1;
     position: relative;
