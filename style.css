@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Freight-text-book;
+    src: url("font/freighttext-book.ttf");
+}
+/*.storcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
 html {
     height: 100%;
 }
@@ -8,11 +18,18 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Freight-text-book", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    position: relative;
+    font-size: 3.5em;
+    color: #404040;
+}
+
+
 p {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Freight-text-book" ,"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #box {
@@ -61,10 +78,8 @@ p {
 }
 
 #footsteps {
-
     float: left;
     height: 200px;
-
 }
 
 .slide {
@@ -72,7 +87,14 @@ p {
     float: left;
     padding-left: 30px;
     margin-right: 1030px;
+}
 
+.container {
+    text-align: center;
+    margin: 25% auto;
+}
+.container p {
+    font-size: 1em;
 }
 
 .noteImg {

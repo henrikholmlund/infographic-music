@@ -124,7 +124,10 @@ $("#box").on("click", function(){
 
 
 
+var windowHeight = $(window).height();
 
+//function each (function){
+//this . css = var för height
 
 //force horizontal scrolling
 $(function() {
