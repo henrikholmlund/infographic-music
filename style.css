@@ -25,8 +25,36 @@ p {
     font-family: "Freight-text-book" ,"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+svg {
+    width: 900px;
+    z-index: 1;
+    float: left;
+}
+
+.path {
+    fill: red;
+    stroke: black;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 15s linear forwards;
+    animation: dash 15s linear forwards;
+
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 .playhead {
-    z-index: 9999;
+    z-index: 9998;
     position: relative;
     height: 125px;
     width: 2px;
@@ -67,6 +95,18 @@ p {
 #footsteps {
     float: left;
     height: 200px;
+}
+
+#svgimg {
+    position: relative;
+    display: inline-block;
+}
+
+#titlediv {
+    z-index: 9999;
+    position: absolute;
+    text-align: center;
+
 }
 
 .slide {
