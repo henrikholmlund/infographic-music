@@ -25,7 +25,7 @@ p {
     font-family: "Freight-text-book" ,"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#box {
+.playhead {
     z-index: 9999;
     position: relative;
     height: 125px;
@@ -74,6 +74,11 @@ p {
     float: left;
     padding-left: 30px;
     margin-right: 1030px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container {

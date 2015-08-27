@@ -32,15 +32,17 @@ footstepsImg.addEventListener("click", function () {
     }
 });
 
+//Alla spelare triggas plus playhead
+
 wholenoteImg.addEventListener("click", function(){
     if(playerWhole.paused === false){
         playerWhole.pause();
-        $("#box").animate({left: "100"}, 1);
+        $(".playhead").animate({left: "100"}, 1);
     }
     else {
         playerWhole.play();
 
-        $("#box")
+        $(".playhead")
             .delay(2400).animate({left: "1000px"}, 2400, "linear")
             .animate({left: "100"}, 1)
 
@@ -52,36 +54,56 @@ wholenoteImg.addEventListener("click", function(){
 halfnoteImg.addEventListener("click", function(){
     if(playerHalf.paused === false){
         playerHalf.pause();
+        $(".playhead").animate({left: "100"}, 1);
     }
     else {
-        playerHalf.play()
+        playerHalf.play();
+
+        $(".playhead")
+            .delay(2400).animate({left: "1000px"}, 2400, "linear")
+            .animate({left: "100"}, 1)
     }
 });
 
 quarternoteImg.addEventListener("click", function(){
     if(playerQuarter.paused === false){
         playerQuarter.pause();
+        $(".playhead").animate({left: "100"}, 1);
     }
     else {
-        playerQuarter.play()
+        playerQuarter.play();
+
+        $(".playhead")
+            .delay(2400).animate({left: "1000px"}, 2400, "linear")
+            .animate({left: "100"}, 1)
     }
 });
 
 eightnoteImg.addEventListener("click", function(){
     if(playerEight.paused === false){
         playerEight.pause();
+        $(".playhead").animate({left: "100"}, 1);
     }
     else {
-        playerEight.play()
+        playerEight.play();
+
+        $(".playhead")
+            .delay(2400).animate({left: "1000px"}, 2400, "linear")
+            .animate({left: "100"}, 1)
     }
 });
 
 sixthnoteImg.addEventListener("click", function(){
     if(playerSixth.paused === false){
         playerSixth.pause();
+        $(".playhead").animate({left: "100"}, 1);
     }
     else {
         playerSixth.play()
+
+        $(".playhead")
+            .delay(2400).animate({left: "1000px"}, 2400, "linear")
+            .animate({left: "100"}, 1)
     }
 });
 
@@ -126,8 +148,8 @@ $(window).scroll(function(){
 
 
 
-$("#box").on("click", function(){
-    $("#box").animate({left: "1000px"}, 2400);
+$(".box").on("click", function(){
+    $(".box").animate({left: "1000px"}, 2400);
 
 });
 
