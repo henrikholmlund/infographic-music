@@ -12,6 +12,18 @@ var playerEight = document.getElementById("playerEight");
 var playerSixth = document.getElementById("playerSixth");
 var playerFootsteps = document.getElementById("playerFootsteps");
 
+
+var windowHeight = $(window).height();
+
+//makes each slide equal to the height of the window
+window.onload = function(){
+    $.each($(".slide"), function(i, slide){
+        $(this).css("height", windowHeight);
+        console.log($(slide).height() );
+    });
+};
+
+
 footstepsImg.addEventListener("click", function () {
     if(playerFootsteps.paused === false){
         playerFootsteps.pause();
@@ -124,9 +136,6 @@ $("#box").on("click", function(){
 
 
 
-var windowHeight = $(window).height();
-
-//function each (function){
 //this . css = var för height
 
 //force horizontal scrolling
