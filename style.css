@@ -10,6 +10,12 @@ body {
     min-height: 100%;
     width: 18000px;
     background-color: #c6c6c6;
+    background-image: url("img/melerad_bakgrund_filter.jpg");
+    background-size: 1200px;
+}
+
+body > :first-child{
+    margin-left: 100px;
 }
 
 h1, h2, h3 {
@@ -30,6 +36,7 @@ p {
 svg {
     width: 700px;
     z-index: 1;
+
 
 }
 
@@ -108,9 +115,15 @@ svg {
 
 }
 
+#intro {
+    position: relative;
+}
+
 #svgimg {
+
     display: none;
     position: relative;
+   
 }
 
 #titlediv {
@@ -121,6 +134,7 @@ svg {
     left: 19%;
     text-align: center;
 }
+
 #emptySpace {
 
 }
@@ -139,6 +153,7 @@ svg {
     border: 3px black solid;
     box-shadow: 0 0 0 3px goldenrod inset;
     position: relative;
+
 
 }
 
