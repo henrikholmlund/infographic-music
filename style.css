@@ -76,7 +76,7 @@ svg {
     margin: 5px auto;
 }
 #rhythmH2Border {
-    border: 3px solid gray;
+    border: 3px solid goldenrod;
     width: 20%;
     margin: 0 auto 100px auto;
 }
@@ -93,7 +93,6 @@ svg {
     margin-top: 50px;
     display: none;
     position: relative;
-
 }
 
 #time-signature {
@@ -127,7 +126,6 @@ svg {
 }
 
 .slide {
-
     background-image: url(http://www.transparenttextures.com/patterns/natural-paper.png);
     width: 1130px;
     float: left;
@@ -139,6 +137,9 @@ svg {
     align-items: center;
     background-color: white;
     border: 3px black solid;
+    box-shadow: 0 0 0 3px goldenrod inset;
+    position: relative;
+
 }
 
 
