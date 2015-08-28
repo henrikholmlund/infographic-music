@@ -114,6 +114,8 @@ $(window).on("scroll", function() {
 
 
 //alla jävla animationer, triggade av scrollLeft-värde
+$("#svgimg").fadeIn(2000);
+$("#titlediv").fadeIn(4000);
 
 $(window).scroll(function(){
     var scrollLeft = $(this).scrollLeft();
