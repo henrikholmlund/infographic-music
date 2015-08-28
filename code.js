@@ -175,6 +175,8 @@ $(function() {
 
 });
 
+
+
 //** play and pause **//
 /*
 var playerc = document.getElementsByClassName("playerclass");

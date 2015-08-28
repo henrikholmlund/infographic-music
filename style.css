@@ -92,7 +92,7 @@ svg {
     line-height: 140%;
 }
 #rhythmbox2 {
-    font-size: 16px;
+    font-size: 1.5em;
     display: none;
 }
 #rhythmbox3 {
@@ -101,7 +101,10 @@ svg {
     display: none;
     position: relative;
 }
-
+#footsteps {
+    text-align: center;
+    margin-bottom: 50px;
+}
 #time-signature {
     height: 200px;
     margin: 0 auto;
@@ -111,10 +114,12 @@ svg {
 
 #footsteps {
     margin-top: 50px;
-    height: 200px;
 
 }
-
+#footstepsImg {
+    height: 200px;
+    width: 200px;
+}
 #intro {
     position: relative;
 }
@@ -131,7 +136,7 @@ svg {
     z-index: 9999;
     position: absolute;
     top: 40%;
-    left: 19%;
+    left: 23%;
     text-align: center;
 }
 
