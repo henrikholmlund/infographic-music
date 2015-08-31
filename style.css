@@ -8,7 +8,7 @@ html {
 
 body {
     min-height: 100%;
-    width: 18000px;
+    width: 15500px;
     background-color: #c6c6c6;
     background-image: url("img/melerad_bakgrund_filter.jpg");
     background-size: 1200px;
@@ -66,14 +66,14 @@ svg {
 #arrow1 {
     width: 150px;
     transform: rotate(135deg);
-    margin-left: 150px;
+    margin-left: 60%;
 }
 
 #arrow2 {
     width: 150px;
     transform: rotate(315deg);
     position: relative;
-    left: 100px;
+    margin-left: 35%;
 }
 
 .hidden {
@@ -138,10 +138,10 @@ svg {
 
 }
 #rhythmbox3 {
-    font-size: 16px;
+    font-size: 1.5em;
     margin-top: 50px;
-
-    position: relative;
+    width: 800px;
+    margin-left: 200px;
 }
 #footsteps {
     text-align: center;
@@ -152,7 +152,10 @@ svg {
     margin: 0 auto;
     padding-left: 60px;
 }
-
+#animationer {
+    margin-right: 200px;
+    float: left;
+}
 #infodiv {
     display: none;
 }
