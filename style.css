@@ -72,9 +72,7 @@ svg {
     top: 120px;
 }
 
-#title {
 
-}
 
 #rhythmh2 {
     font-size: 1.5em;
@@ -93,12 +91,12 @@ svg {
 }
 #rhythmbox2 {
     font-size: 1.5em;
-    display: none;
+
 }
 #rhythmbox3 {
     font-size: 16px;
     margin-top: 50px;
-    display: none;
+
     position: relative;
 }
 #footsteps {
@@ -108,10 +106,22 @@ svg {
 #time-signature {
     height: 200px;
     margin: 0 auto;
-    display: none;
     padding-left: 60px;
 }
 
+#infodiv {
+    display: none;
+}
+#infodiv2 {
+    display:none;
+}
+#wholenoteDiv {
+    display: none;
+}
+
+#halfnoteDiv {
+    display: none;
+}
 #footsteps {
     margin-top: 50px;
 
@@ -172,4 +182,56 @@ svg {
 .noteImg {
     z-index: 1;
     position: relative;
+}
+
+.mouse {
+    width: 22px;
+    position: absolute;
+    height: 42px;
+    border-radius: 15px;
+    border: 2px solid goldenrod;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+.scroll {
+    display: block;
+    margin: 6px auto;
+    width: 3px;
+    height: 3px;
+    border-radius: 4px;
+    background: goldenrod;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
 }

@@ -99,7 +99,7 @@ sixthnoteImg.addEventListener("click", function(){
         $(".playhead").animate({left: "100"}, 1);
     }
     else {
-        playerSixth.play()
+        playerSixth.play();
 
         $(".playhead")
             .delay(2400).animate({left: "1000px"}, 2400, "linear")
@@ -112,8 +112,8 @@ $(window).on("scroll", function() {
     console.log($(window).scrollLeft());
 });
 
-
 //alla jävla animationer, triggade av scrollLeft-värde
+
 $("#svgimg").fadeIn(2000);
 $("#titlediv").fadeIn(4000);
 
@@ -132,19 +132,30 @@ $(window).scroll(function(){
     else if(scrollLeft > 1900 || scrollLeft < 1500){
         $("#rhythmbox1").fadeOut(400);
     }
-    if(scrollLeft > 1600){
-        $("#rhythmbox2").fadeIn(1000);
+    if(scrollLeft > 2600){
+        $("#infodiv").fadeIn(1000);
     }
-    else if(scrollLeft > 2300 || scrollLeft < 1550){
-        $("#rhythmbox2").fadeOut(400);
+    else if(scrollLeft > 4200 || scrollLeft < 2750){
+        $("#infodiv").fadeOut(400);
     }
-    if(scrollLeft > 1800){
-        $("#rhythmbox3").fadeIn(1000);
-        $("#time-signature").fadeIn(2000);
+    if(scrollLeft > 4200){
+        $("#infodiv2").fadeIn(1000);
+
     }
-    else if(scrollLeft > 1900 || scrollLeft < 1650){
-        $("#rhythmbox3").fadeOut(400);
-        $("#time-signature").fadeOut(400);
+    else if(scrollLeft > 5800 || scrollLeft < 4400){
+        $("#infodiv2").fadeOut(400);
+    }
+    if(scrollLeft > 5800) {
+        $("#wholenoteDiv").fadeIn(1000);
+    }
+    else if(scrollLeft > 7500 || scrollLeft < 6100){
+        $("#wholenoteDiv").fadeOut(400);
+    }
+    if(scrollLeft > 7300){
+        $("#halfnoteDiv").fadeIn(1000);
+    }
+    else if(scrollLeft > 9000 || scrollLeft < 7300){
+        $("#halfnoteDiv").fadeOut(400);
     }
 });
 
