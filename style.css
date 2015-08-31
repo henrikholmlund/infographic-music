@@ -193,12 +193,8 @@ svg {
     z-index: 9999;
     position: absolute;
     top: 40%;
-    left: 23%;
+    left: 23.5%;
     text-align: center;
-}
-
-#emptySpace {
-
 }
 
 .slide {
@@ -281,4 +277,8 @@ svg {
         -webkit-transform: translateY(20px);
         transform: translateY(20px);
     }
+}
+
+.bigger {
+    font-size: 1.2em;
 }
