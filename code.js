@@ -32,6 +32,8 @@ footstepsImg.addEventListener("click", function () {
     }
 });
 
+
+
 //Alla spelare triggas plus playhead
 
 wholenoteImg.addEventListener("click", function(){
@@ -106,6 +108,13 @@ sixthnoteImg.addEventListener("click", function(){
             .animate({left: "100"}, 1)
     }
 });
+
+$("#time-signature").click(function () {
+
+    $( ".path2" ).attr( "class", "arrow" );
+});
+
+
 
 //räknar vilken positon man är i
 $(window).on("scroll", function() {

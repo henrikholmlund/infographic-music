@@ -52,6 +52,7 @@ svg {
 
 }
 
+
 @keyframes dash {
     from {
         stroke-dashoffset: 1000;
@@ -60,6 +61,50 @@ svg {
         stroke-dashoffset: 0;
     }
 }
+
+
+#arrow1 {
+    width: 150px;
+    transform: rotate(135deg);
+    margin-left: 150px;
+}
+
+#arrow2 {
+    width: 150px;
+    transform: rotate(315deg);
+    position: relative;
+    left: 100px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.arrow {
+    fill: white;
+    stroke: black;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+    begin: indefinite;
+    -webkit-animation: drawArrow 3s linear forwards;
+    animation: drawArrow 3s linear forwards;
+
+}
+
+
+@keyframes drawArrow {
+    from {
+        stroke-dashoffset: 1600;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
 
 .playhead {
     z-index: 9998;
@@ -72,13 +117,13 @@ svg {
 }
 
 
-
 #rhythmh2 {
     font-size: 1.5em;
     display: none;
     text-align: center;
     margin: 5px auto;
 }
+
 .rhythmH2Border {
     border: 3px solid goldenrod;
     width: 20%;
