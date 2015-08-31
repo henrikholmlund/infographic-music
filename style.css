@@ -20,7 +20,6 @@ body > :first-child{
 
 h1, h2, h3 {
     font-family: "Freight-text-book", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 }
 
 h1 {
@@ -80,7 +79,7 @@ svg {
     text-align: center;
     margin: 5px auto;
 }
-#rhythmH2Border {
+.rhythmH2Border {
     border: 3px solid goldenrod;
     width: 20%;
     margin: 0 auto 100px auto;

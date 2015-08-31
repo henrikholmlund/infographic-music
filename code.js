@@ -157,6 +157,24 @@ $(window).scroll(function(){
     else if(scrollLeft > 9000 || scrollLeft < 7300){
         $("#halfnoteDiv").fadeOut(400);
     }
+    if(scrollLeft > 9300){
+        $("#4-delsDiv").fadeIn(1000);
+    }
+    else if(scrollLeft > 10800 || scrollLeft < 8900){
+        $("#4-delsDiv").fadeOut(400);
+    }
+    if(scrollLeft > 10800){
+        $("#8-delsDiv").fadeIn(1000);
+    }
+    else if(scrollLeft > 12400 || scrollLeft < 10400){
+        $("#8-delsDiv").fadeOut(400);
+    }
+    if(scrollLeft > 12300){
+        $("#16-delsDiv").fadeIn(1000);
+    }
+    else if(scrollLeft > 14200 || scrollLeft < 12200){
+        $("#16-delsDiv").fadeOut(400);
+    }
 });
 
 
